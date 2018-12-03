@@ -2,20 +2,23 @@
 Scripts for deploying a backup server on a raspberry pi using nextcloud on
 docker, including monitoring software.
 
-# Install docker-engine for raspberry pi
-chmod +x get-docker.sh
-./get-docker.sh
+Install docker-engine for raspberry pi
 
-# Set user in docker group, such that docker can automatically run with sudo 
-# rights. Relog to get the new group working.
-sudo groupadd docker
-sudo usermod -aG docker $USER
+    chmod +x get-docker.sh
+    ./get-docker.sh
 
-# Test docker installation and grouping with
-docker run hello-world
+Set user in docker grouprights
 
-# Start the different containerized services
+    sudo groupadd docker
+    sudo usermod -aG docker $USER
+
+Test docker installation and grouping with
+
+    docker run hello-world
+
+Start the different containerized services
 Nextcloud
+
     Start
     ./start_nextcloud.sh
 
@@ -27,15 +30,17 @@ Nextcloud
                             more frequently.
 
 RPI-monitor
-    Start
+
+    #Start
     ./start_rpimonitor.sh
 
-    Connect
+    #Connect
     localhost:8888
 
 Portainer
-    Start
+    
+    #Start
     ./start_portainer.sh
 
-    Connect
+    #Connect
     localhost:9000
