@@ -17,6 +17,7 @@ Test docker installation and grouping with
     docker run hello-world
 
 Start the different containerized services
+
 Nextcloud
 
     Start
@@ -31,16 +32,16 @@ Nextcloud
 
 RPI-monitor
 
-    #Start
+    Start
     ./start_rpimonitor.sh
 
-    #Connect
+    Connect
     localhost:8888
 
 Portainer
     
-    #Start
+    Start
     ./start_portainer.sh
 
-    #Connect
+    Connect
     localhost:9000
